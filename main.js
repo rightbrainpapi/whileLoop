@@ -1,4 +1,4 @@
-var isMouseVisible;
+var isMouseVisible = false;
 
 // This function moves the elephant
 function elephantRuns() {
@@ -18,29 +18,46 @@ function elephantRuns() {
 }
 
 
+
+
+
+
+
+
+// while(isMouseVisible){
+//   // execute move function
+//   if (!isMouseVisible){
+//     console.log(isMouseVisible);
+//     break;
+//   }
+//   isMouseVisible = false;
+// }
+
+// ourWhileLoop()
+
+
+
+
+
 // This is the click function 
-function addMouse(){
+function toggleMouse(){
   // makes mouse visible
   var ourMouseStyle = document.getElementById("ourMouse").style;
 
   if (ourMouseStyle.display=="none"){
     ourMouseStyle.display="block";
     isMouseVisible = true;
-
     }
     else {
       ourMouseStyle.display="none";
+      isMouseVisible = false;
     }
 
+    isMouseVisible ? elephantRuns() : console.log('there is no mouse');
 
-
-
-
- 
-    
 
 }
-addMouse();
+toggleMouse();
 
 
 
@@ -57,12 +74,6 @@ function removeMouse(){
 
 
 
-  //  while(isMouseVisible){
-  //     // execute move function
-  //     if (!isMouseVisible){
-  //       console.log(isMouseVisible);
-  //       break;
-  //     }
-  //   }
+
 
 
