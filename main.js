@@ -1,7 +1,7 @@
-
+var isMouseVisible;
 
 // This function moves the elephant
-function myMove() {
+function elephantRuns() {
   // change the still elephant to gif
   var elem = document.getElementById("myElephant");   
   var pos = 150;
@@ -21,8 +21,26 @@ function myMove() {
 // This is the click function 
 function addMouse(){
   // makes mouse visible
+  var ourMouseStyle = document.getElementById("ourMouse").style;
+
+  if (ourMouseStyle.display=="none"){
+    ourMouseStyle.display="block";
+    isMouseVisible = true;
+
+    }
+    else {
+      ourMouseStyle.display="none";
+    }
+
+
+
+
+
+ 
+    
 
 }
+addMouse();
 
 
 
@@ -39,13 +57,12 @@ function removeMouse(){
 
 
 
-while(isMouseVisible){
-  // execute move function
-
-
-
-
-}
-
+  //  while(isMouseVisible){
+  //     // execute move function
+  //     if (!isMouseVisible){
+  //       console.log(isMouseVisible);
+  //       break;
+  //     }
+  //   }
 
 
