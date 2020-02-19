@@ -1,8 +1,18 @@
-#dogKennel {
+#outside{
+  background: teal;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#theRoom {
+    background: yellow;
     width: 400px;
     height: 400px;
     position: relative;
-    background: yellow;
+   
   }
   #myElephant {
     width: 50px;
@@ -10,4 +20,7 @@
     top:150px;
     position: absolute;
     background-color: red;
+  }
+  button{
+    max-width: 100px;
   }
