@@ -6,10 +6,10 @@ function elephantRuns() {
   var elem = document.getElementById("myElephant");   
   var posL = elem.style.left;
   var posR = elem.style.right;
-  var id = setInterval(frame, 10);
+  var id = setInterval(frame, 15);
   function frame() {
 
-    if (posL == 225) {
+    if (posL == 1100) {
       clearInterval(id);
       console.log("cleared")
     } else {
@@ -92,11 +92,11 @@ function toggleMouse(){
 
 
 
-
+    // Teranary Operator
     // isMouseVisible ? elephantRuns() : console.log('there is no mouse');
     
     
-    
+
 }
 // toggleMouse();
 
