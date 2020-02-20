@@ -4,38 +4,25 @@ var isMouseVisible = false;
 function elephantRuns() {
   // change the still elephant to gif
   var elem = document.getElementById("myElephant");   
-  var pos = 150;
+  var posL = elem.style.left;
+  var posR = elem.style.right;
   var id = setInterval(frame, 10);
   function frame() {
-    if (pos == 350) {
+
+    if (posL == 225) {
       clearInterval(id);
+      console.log("cleared")
     } else {
-      pos++; 
-      elem.style.top = pos + 'px'; 
+      posL++; 
+      elem.style.left = posL + 'px';
+      // console.log(posR);
+      console.log(posL);
+
       //elem.style.bottom = pos + 'px'; 
     }
+  
   }
 }
-
-
-
-
-
-
-
-
-// while(isMouseVisible){
-//   // execute move function
-//   if (!isMouseVisible){
-//     console.log(isMouseVisible);
-//     break;
-//   }
-//   isMouseVisible = false;
-// }
-
-// ourWhileLoop()
-
-
 
 
 
@@ -44,7 +31,10 @@ function toggleMouse(){
   // makes mouse visible
   var ourMouseStyle = document.getElementById("ourMouse").style;
 
+  // If else Statement to controll whether mouse is in Sancuary
   if (ourMouseStyle.display=="none"){
+
+    // we want the moving 
     ourMouseStyle.display="block";
     isMouseVisible = true;
     }
@@ -55,22 +45,9 @@ function toggleMouse(){
 
     isMouseVisible ? elephantRuns() : console.log('there is no mouse');
 
-
 }
 toggleMouse();
 
-
-
-function removeMouse(){
-  // remove the mouse
-
-}
-
-
-
-// while("condition is true"){
-//   // Do something
-// }
 
 
 
