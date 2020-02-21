@@ -1,6 +1,6 @@
 #outside{
   background: teal;
-  width: 100%;
+  width: 600px;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
 
 #theRoom {
     background: yellow;
-    width: 90%;
+    width: 400px;
     height: 400px;
     position: relative;
     /* display: flex; */   
@@ -38,9 +38,9 @@
   button{
     margin-top: 30px;
     max-width: 250px;
-    height: 70px;
+    height: 90px;
     background: red;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
